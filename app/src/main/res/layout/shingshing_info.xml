@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#eae6da">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="싱싱정코통 로고 자리 아직 높이 못정함"/>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/ScrollView">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+            <!-- 순위1,2,3위 어뎁터뷰로 달 리스트뷰 -->
+            <ListView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                >
+            </ListView>
+            <!-- 1위식물 설명 커스텀뷰일지 뭘지몰라서 일단 텍스트뷰로-->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1위식물 설명"
+                />
+            <!-- 1위식물과 관련된 병충해 정보를 달아줄 뷰! 커스텀뷰일지 뭘지몰라서 일단 텍스트뷰로 -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1위관련 병충해"
+                />
+            <!-- 유투브 영상! -->
+            <com.google.android.youtube.player.YouTubePlayerView
+                android:id="@+id/youtubeView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="onClick"
+                />
+
+            <!-- 작물 심는 시기와 관련된 뷰 -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="작물 심는 시기 관련 다운제공"
+                />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
