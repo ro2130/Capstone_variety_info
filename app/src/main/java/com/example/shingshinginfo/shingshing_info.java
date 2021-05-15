@@ -13,7 +13,7 @@ import com.google.android.youtube.player.YouTubePlayerView;
 
 public class shingshing_info extends YouTubeBaseActivity {
     YouTubePlayerView youTubePlayerView;
-    String YoutubeKey="AIzaSyClORWY5h9fPZ6D1_GNc2_xLYsjWiHJA2U";
+    String YoutubeKey=youtubekey.YoutubeKey;
     String youTubePid="xHLu8gFP3Fw";
     YouTubePlayer.OnInitializedListener listener;
     @Override
