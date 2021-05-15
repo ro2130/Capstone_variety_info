@@ -1,11 +1,8 @@
 package com.example.shingshinginfo;
 
 import android.os.Bundle;
-import android.view.View;
-import android.widget.Button;
 
-import androidx.appcompat.app.AppCompatActivity;
-
+import com.example.shingshinginfo.key.youtubekey;
 import com.google.android.youtube.player.YouTubeBaseActivity;
 import com.google.android.youtube.player.YouTubeInitializationResult;
 import com.google.android.youtube.player.YouTubePlayer;
@@ -13,7 +10,7 @@ import com.google.android.youtube.player.YouTubePlayerView;
 
 public class shingshing_info extends YouTubeBaseActivity {
     YouTubePlayerView youTubePlayerView;
-    String YoutubeKey=youtubekey.YoutubeKey;
+    String YoutubeKey= youtubekey.YoutubeKey;
     String youTubePid="xHLu8gFP3Fw";
     YouTubePlayer.OnInitializedListener listener;
     @Override
