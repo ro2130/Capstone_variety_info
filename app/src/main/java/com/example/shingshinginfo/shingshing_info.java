@@ -2,7 +2,7 @@ package com.example.shingshinginfo;
 
 import android.os.Bundle;
 
-import com.example.shingshinginfo.key.youtubekey;
+//import com.example.shingshinginfo.key.youtubekey;
 import com.google.android.youtube.player.YouTubeBaseActivity;
 import com.google.android.youtube.player.YouTubeInitializationResult;
 import com.google.android.youtube.player.YouTubePlayer;
@@ -10,7 +10,7 @@ import com.google.android.youtube.player.YouTubePlayerView;
 
 public class shingshing_info extends YouTubeBaseActivity {
     YouTubePlayerView youTubePlayerView;
-    String YoutubeKey= youtubekey.YoutubeKey;
+    //String YoutubeKey= youtubekey.YoutubeKey;
     String youTubePid="xHLu8gFP3Fw";
     YouTubePlayer.OnInitializedListener listener;
     @Override
@@ -27,7 +27,7 @@ public class shingshing_info extends YouTubeBaseActivity {
             @Override
             public void onInitializationFailure(YouTubePlayer.Provider provider, YouTubeInitializationResult youTubeInitializationResult) { }
         };
-        youTubePlayerView.initialize(YoutubeKey,listener);
+        //youTubePlayerView.initialize(YoutubeKey,listener);
     }
 
 
