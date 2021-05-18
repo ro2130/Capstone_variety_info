@@ -14,7 +14,7 @@ import retrofit2.http.Path;
 import retrofit2.http.Query;
 
 public interface RetrofitAPI {
-    //싱싱정보통
+    //싱싱정보통 브랜치 확인
     @GET("variety")
     Call<List<ResponseShingShingInfo>> getInfo();
 }
