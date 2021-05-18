@@ -15,6 +15,6 @@ import retrofit2.http.Query;
 
 public interface RetrofitAPI {
     //싱싱정보통
-    @GET("variety")
+    @GET("api/variety")
     Call<List<ResponseShingShingInfo>> getInfo();
 }
