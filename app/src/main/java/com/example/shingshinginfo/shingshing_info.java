@@ -30,4 +30,6 @@ public class shingshing_info extends YouTubeBaseActivity {
         youTubePlayerView.initialize(YoutubeKey,listener);
     }
 
+
+
 }
