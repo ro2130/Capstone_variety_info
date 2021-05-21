@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
+<LinearLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:orientation="vertical"
     xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -18,38 +19,169 @@
             android:layout_height="match_parent"
             android:orientation="vertical"
             >
-            <!-- 순위1,2,3위 어뎁터뷰로 달 리스트뷰 -->
-            <ListView
-                android:layout_width="wrap_content"
+            <!-- 1위식물 설명-->
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_margin="6dp"
+                android:padding="6dp"
+                android:background="@drawable/roundshpe"
                 >
-            </ListView>
-            <!-- 1위식물 설명 커스텀뷰일지 뭘지몰라서 일단 텍스트뷰로-->
-            <TextView
-                android:layout_width="wrap_content"
+
+                    <ImageView
+                        android:id="@+id/firstImg"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        tools:srcCompat="@tools:sample/avatars" />
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_weight="3">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                       >
+                        <TextView
+                            android:id="@+id/firstName"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="3"
+
+                            android:text="1등작물 이름"/>
+                        <!--등수 표현-->
+                        <ImageView
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            tools:srcCompat="@tools:sample/avatars"
+                            android:layout_gravity="right"/>
+                    </LinearLayout>
+                    <TextView
+                        android:id="@+id/firstExp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="1등작물 설명"/>
+                </LinearLayout>
+
+            </LinearLayout>
+            <!-- 순위 2,3위 어뎁터뷰로 달 리스트뷰 근데 이것도 걍 리니어 쓰는게 나을듯 -->
+            <LinearLayout
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="1위식물 설명"
+                android:orientation="horizontal"
+                android:layout_margin="6dp"
+                android:padding="6dp"
+                android:background="@drawable/roundshpe">
+                <TextView
+                    android:id="@+id/secondName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="2등작물 이름"
+                    android:layout_weight="4"
                 />
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="right"
+                    tools:srcCompat="@tools:sample/avatars"
+                    android:layout_weight="1"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_margin="6dp"
+                android:padding="6dp"
+                android:background="@drawable/roundshpe">
+                <TextView
+                    android:id="@+id/thirdName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="3등작물 이름"
+                    android:layout_weight="4"
+                    />
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="right"
+                    tools:srcCompat="@tools:sample/avatars"
+                    android:layout_weight="1"/>
+            </LinearLayout>
+
+
+
             <!-- 1위식물과 관련된 병충해 정보를 달아줄 뷰! 커스텀뷰일지 뭘지몰라서 일단 텍스트뷰로 -->
-            <TextView
-                android:layout_width="wrap_content"
+            <LinearLayout
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="1위관련 병충해"
-                />
+                android:orientation="horizontal"
+                android:layout_margin="6dp"
+                android:padding="6dp"
+                android:background="@drawable/roundshpe">
+                <ImageView
+                    android:id="@+id/BugImg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    tools:srcCompat="@tools:sample/avatars"
+                    android:layout_weight="2"
+                    />
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_weight="3">
+                    <TextView
+                        android:id="@+id/BugName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="병충해 이름"/>
+                    <TextView
+                        android:id="@+id/BugExplain"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="병충해 내용"/>
+                </LinearLayout>
+
+            </LinearLayout>
             <!-- 유투브 영상! -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_margin="6dp"
+                android:padding="6dp"
+                android:background="@drawable/roundshpe">
             <com.google.android.youtube.player.YouTubePlayerView
                 android:id="@+id/youtubeView"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:onClick="onClick"
                 />
+            </LinearLayout>
 
             <!-- 작물 심는 시기와 관련된 뷰 -->
-            <TextView
-                android:layout_width="wrap_content"
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_margin="6dp"
+                android:padding="6dp"
+                android:background="@drawable/roundshpe"
+
                 android:text="작물 심는 시기 관련 다운제공"
-                />
+                >
+
+                <Button
+                    android:id="@+id/button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="다운로드"
+                    android:layout_gravity="center"
+                    android:background="#61cabc"
+                    />
+            </LinearLayout>
         </LinearLayout>
     </ScrollView>
 </LinearLayout>
