@@ -27,7 +27,9 @@ public class shingshing_info extends YouTubeBaseActivity {
     // 병충해
     String BugName;//병충해 이름
     String []BugExplain;//병충해 설명
-    String []BugImg;//병충해 이미지 2개
+    String BugHardName;//병충해 피해 이름
+    String BugImg;//병충해 이미지
+    String BugHardImg;//병충해 피해이미지
 
     //작물정보 다운로드
     String downLink;//작물정보 다운로드 링크
@@ -36,8 +38,9 @@ public class shingshing_info extends YouTubeBaseActivity {
 
     //youtube위한 변수들
     YouTubePlayerView youTubePlayerView;
-    String YoutubeKey= youtubekey.YoutubeKey;
-    String youTubePid="xHLu8gFP3Fw";//나중에 받아올거임
+    //String YoutubeKey= youtubekey.YoutubeKey;
+    String YoutubeKey= "12342532445756785676435";
+    String youTubePid="CfPxlb8-ZQ0";//나중에 받아올거임
     YouTubePlayer.OnInitializedListener listener;
 
 
