@@ -1,5 +1,5 @@
-package com.example.shingshinginfo;
-// 통신실패시 3번까지 시도하는 부분
+package com.example.shingshinginfo.h_network;
+
 import android.util.Log;
 
 import retrofit2.Call;
