@@ -9,7 +9,7 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="싱싱정코통 로고 자리 아직 높이 못정함"/>
+        android:text="싱싱정보통 로고 자리 아직 높이 못정함"/>
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -28,7 +28,7 @@
                 android:padding="6dp"
                 android:background="@drawable/roundshpe"
                 >
-
+                <!--1등작물 사진-->
                     <ImageView
                         android:id="@+id/firstImg"
                         android:layout_width="wrap_content"
@@ -56,7 +56,7 @@
                         <ImageView
                             android:layout_width="30dp"
                             android:layout_height="30dp"
-                            tools:srcCompat="@tools:sample/avatars"
+                            android:background="@drawable/first"
                             android:layout_gravity="right"/>
                     </LinearLayout>
                     <TextView
@@ -80,14 +80,14 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="2등작물 이름"
-                    android:layout_weight="4"
+                    android:layout_weight="3"
                 />
                 <ImageView
                     android:layout_width="20dp"
                     android:layout_height="20dp"
                     android:layout_gravity="right"
-                    tools:srcCompat="@tools:sample/avatars"
-                    android:layout_weight="1"/>
+                    android:background="@drawable/second"
+                    />
             </LinearLayout>
             <LinearLayout
                 android:layout_width="match_parent"
@@ -101,14 +101,14 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="3등작물 이름"
-                    android:layout_weight="4"
+                    android:layout_weight="3"
                     />
                 <ImageView
                     android:layout_width="20dp"
                     android:layout_height="20dp"
                     android:layout_gravity="right"
-                    tools:srcCompat="@tools:sample/avatars"
-                    android:layout_weight="1"/>
+                    android:background="@drawable/third"
+                    />
             </LinearLayout>
 
 
