@@ -1,6 +1,6 @@
-package com.example.shingshinginfo;
+package com.example.shingshinginfo.h_network;
 
-import com.example.shingshinginfo.RetrofitAPI;
+
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 
